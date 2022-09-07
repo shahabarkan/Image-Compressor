@@ -30,17 +30,17 @@ def compres(file_p):
         if h> 1000 :h=int(h/1.5)
         newpic=picture.resize((w,h))
 
-    if picsize <= 1000:
+    if picsize <= 10000:
         picture.save("final"+file_p,optimize=True,quality=95)
-    elif picsize <= 2000:
+    elif picsize <= 20000:
         picture.save("final"+file_p,optimize=True,quality=90)
-    elif picsize <= 3000:
+    elif picsize <= 30000:
         picture.save("final"+file_p,optimize=True,quality=80)
-    elif picsize <= 4000:
+    elif picsize <= 40000:
         newpic.save("final"+file_p,optimize=True,quality=80)
-    elif picsize <= 5000:
+    elif picsize <= 50000:
         newpic.save("final"+file_p,optimize=True,quality=70)
-    elif picsize <= 6000 :
+    elif picsize <= 60000 :
         newpic.save("final"+file_p,optimize=True,quality=70)
     else:
         newpic.save("final_"+file_p,optimize=True,quality=70)
